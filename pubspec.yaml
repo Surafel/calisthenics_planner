@@ -41,6 +41,10 @@ dependencies:
   # Opens each exercise's video link in the browser/app.
   url_launcher: ^6.3.1
 
+  # Embeds each exercise's tutorial video (WebView on Android, iframe on web).
+  webview_flutter: ^4.13.1
+  web: ^1.1.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

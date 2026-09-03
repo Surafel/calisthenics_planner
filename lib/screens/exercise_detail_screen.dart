@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../models/exercise.dart';
 import '../theme/app_colors.dart';
+import '../widgets/youtube_embed.dart';
 
 String _capitalize(String s) => s.isEmpty ? s : s[0].toUpperCase() + s.substring(1);
 
@@ -14,11 +15,30 @@ class ExerciseDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final categoryColor = AppColors.colorFor(exercise.category);
+    final videoId = exercise.videoId;
+
     return Scaffold(
       appBar: AppBar(title: Text(exercise.name)),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          if (videoId != null) ...[
+            AspectRatio(
+              aspectRatio: 16 / 9,
+              child: YoutubeEmbed(videoId: videoId),
+            ),
+            if (exercise.videoChannel != null) ...[
+              const SizedBox(height: 4),
+              Text(
+                'Video by ${exercise.videoChannel}',
+                style: Theme.of(context)
+                    .textTheme
+                    .bodySmall
+                    ?.copyWith(color: AppColors.muted),
+              ),
+            ],
+            const SizedBox(height: 20),
+          ],
           Wrap(
             spacing: 8,
             runSpacing: 8,
@@ -63,18 +83,20 @@ class ExerciseDetailScreen extends StatelessWidget {
           Text('How to', style: Theme.of(context).textTheme.titleMedium),
           const SizedBox(height: 8),
           Text(exercise.description, style: Theme.of(context).textTheme.bodyLarge),
-          const SizedBox(height: 20),
-          OutlinedButton.icon(
-            onPressed: () => _openVideo(context, exercise),
-            icon: const Icon(Icons.play_circle_outline),
-            label: const Text('Watch video'),
-          ),
+          if (videoId == null) ...[
+            const SizedBox(height: 20),
+            OutlinedButton.icon(
+              onPressed: () => _openVideoSearch(context, exercise),
+              icon: const Icon(Icons.play_circle_outline),
+              label: const Text('Watch video'),
+            ),
+          ],
         ],
       ),
     );
   }
 
-  Future<void> _openVideo(BuildContext context, Exercise exercise) async {
+  Future<void> _openVideoSearch(BuildContext context, Exercise exercise) async {
     final messenger = ScaffoldMessenger.of(context);
     final opened = await launchUrl(
       exercise.videoSearchUrl,

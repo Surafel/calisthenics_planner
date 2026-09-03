@@ -15,6 +15,8 @@ class Exercise {
   final MeasurementType measurementType;
   final List<String> equipment;
   final String description;
+  final String? videoId;
+  final String? videoChannel;
 
   const Exercise({
     required this.id,
@@ -25,6 +27,8 @@ class Exercise {
     required this.measurementType,
     required this.equipment,
     required this.description,
+    this.videoId,
+    this.videoChannel,
   });
 
   factory Exercise.fromJson(Map<String, dynamic> json) => Exercise(
@@ -37,6 +41,8 @@ class Exercise {
             MeasurementType.values.byName(json['measurementType'] as String),
         equipment: (json['equipment'] as List).cast<String>(),
         description: json['description'] as String,
+        videoId: json['videoId'] as String?,
+        videoChannel: json['videoChannel'] as String?,
       );
 
   Map<String, dynamic> toJson() => {
@@ -48,10 +54,12 @@ class Exercise {
         'measurementType': measurementType.name,
         'equipment': equipment,
         'description': description,
+        if (videoId != null) 'videoId': videoId,
+        if (videoChannel != null) 'videoChannel': videoChannel,
       };
 
-  /// A YouTube search for this exercise, since the library doesn't curate
-  /// specific video links per entry.
+  /// A YouTube search for this exercise, used as a fallback when no curated
+  /// video is available for it.
   Uri get videoSearchUrl => Uri.https(
         'www.youtube.com',
         '/results',

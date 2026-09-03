@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../data/starter_plan.dart';
 import '../models/workout.dart';
 import '../services/exercise_repository.dart';
 import '../services/schedule_repository.dart';
@@ -65,13 +66,68 @@ class _WorkoutsScreenState extends State<WorkoutsScreen> {
     widget.onChanged();
   }
 
+  Future<void> _loadStarterPlan() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Load starter plan?'),
+        content: const Text(
+          'Adds 4 preset workouts (Push, Pull, Legs, Core & Conditioning) and '
+          'schedules them Monday/Wednesday/Friday/Saturday, with the other '
+          'days set to rest. This overwrites whatever is currently scheduled '
+          'on those days.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            child: const Text('Load plan'),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true) return;
+
+    for (final workout in buildStarterWorkouts()) {
+      await widget.workoutRepository.saveWorkout(workout);
+    }
+    for (final entry in starterScheduleAssignments.entries) {
+      await widget.scheduleRepository.assignWorkout(entry.key, entry.value);
+    }
+    setState(() {});
+    widget.onChanged();
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Starter plan loaded and scheduled.')),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final workouts = widget.workoutRepository.workouts;
     return Scaffold(
-      appBar: AppBar(title: const Text('My Workouts')),
+      appBar: AppBar(
+        title: const Text('My Workouts'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.auto_awesome),
+            tooltip: 'Load starter plan',
+            onPressed: _loadStarterPlan,
+          ),
+        ],
+      ),
       body: workouts.isEmpty
-          ? const Center(child: Text('No workouts yet. Tap + to build one.'))
+          ? const Center(
+              child: Text(
+                'No workouts yet. Tap + to build one, or load the starter plan.',
+                textAlign: TextAlign.center,
+              ),
+            )
           : ListView.builder(
               itemCount: workouts.length,
               itemBuilder: (context, index) {

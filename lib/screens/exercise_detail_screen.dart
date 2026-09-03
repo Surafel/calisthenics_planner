@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../models/exercise.dart';
 import '../theme/app_colors.dart';
@@ -62,8 +63,27 @@ class ExerciseDetailScreen extends StatelessWidget {
           Text('How to', style: Theme.of(context).textTheme.titleMedium),
           const SizedBox(height: 8),
           Text(exercise.description, style: Theme.of(context).textTheme.bodyLarge),
+          const SizedBox(height: 20),
+          OutlinedButton.icon(
+            onPressed: () => _openVideo(context, exercise),
+            icon: const Icon(Icons.play_circle_outline),
+            label: const Text('Watch video'),
+          ),
         ],
       ),
     );
+  }
+
+  Future<void> _openVideo(BuildContext context, Exercise exercise) async {
+    final messenger = ScaffoldMessenger.of(context);
+    final opened = await launchUrl(
+      exercise.videoSearchUrl,
+      mode: LaunchMode.externalApplication,
+    );
+    if (!opened) {
+      messenger.showSnackBar(
+        const SnackBar(content: Text('Could not open the video link.')),
+      );
+    }
   }
 }

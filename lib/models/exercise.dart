@@ -49,4 +49,12 @@ class Exercise {
         'equipment': equipment,
         'description': description,
       };
+
+  /// A YouTube search for this exercise, since the library doesn't curate
+  /// specific video links per entry.
+  Uri get videoSearchUrl => Uri.https(
+        'www.youtube.com',
+        '/results',
+        {'search_query': '$name calisthenics tutorial'},
+      );
 }

@@ -1,0 +1,506 @@
+[
+  {
+    "id": "wall_pushup",
+    "name": "Wall Push-up",
+    "category": "push",
+    "muscleGroups": ["chest", "triceps", "shoulders"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Stand arm's length from a wall, hands on the wall at shoulder height; bend elbows to bring chest to the wall and press back."
+  },
+  {
+    "id": "incline_pushup",
+    "name": "Incline Push-up",
+    "category": "push",
+    "muscleGroups": ["chest", "triceps", "shoulders"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["bodyweight", "bench or step"],
+    "description": "Hands on an elevated surface, body straight from head to heels; lower chest to the edge and press back up."
+  },
+  {
+    "id": "pushup",
+    "name": "Push-up",
+    "category": "push",
+    "muscleGroups": ["chest", "triceps", "shoulders", "core"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Hands under shoulders, body in a straight line; lower chest to floor and press back up."
+  },
+  {
+    "id": "diamond_pushup",
+    "name": "Diamond Push-up",
+    "category": "push",
+    "muscleGroups": ["triceps", "chest"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Hands together under the chest forming a diamond shape; lower and press back up, keeping elbows close to the body."
+  },
+  {
+    "id": "decline_pushup",
+    "name": "Decline Push-up",
+    "category": "push",
+    "muscleGroups": ["chest", "shoulders", "triceps"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["bodyweight", "bench or step"],
+    "description": "Feet elevated on a surface, hands on the floor; lower chest to the ground and press back up."
+  },
+  {
+    "id": "pike_pushup",
+    "name": "Pike Push-up",
+    "category": "push",
+    "muscleGroups": ["shoulders", "triceps"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Hips high in an inverted V, hands on the floor; lower the top of the head toward the floor and press back up."
+  },
+  {
+    "id": "archer_pushup",
+    "name": "Archer Push-up",
+    "category": "push",
+    "muscleGroups": ["chest", "shoulders", "triceps"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Wide hand placement; shift weight to one side and bend that elbow while the other arm stays straight, then switch sides."
+  },
+  {
+    "id": "pseudo_planche_pushup",
+    "name": "Pseudo Planche Push-up",
+    "category": "push",
+    "muscleGroups": ["shoulders", "chest", "core"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Hands placed near the hips with fingers pointing toward the feet, torso leaning forward; perform a push-up in this lean."
+  },
+  {
+    "id": "dips",
+    "name": "Dips",
+    "category": "push",
+    "muscleGroups": ["triceps", "chest", "shoulders"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["parallel bars"],
+    "description": "Support yourself on parallel bars; lower until elbows reach roughly 90 degrees, then press back up."
+  },
+  {
+    "id": "wall_handstand_pushup",
+    "name": "Handstand Push-up (Wall-Assisted)",
+    "category": "push",
+    "muscleGroups": ["shoulders", "triceps"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["bodyweight", "wall"],
+    "description": "Kick up into a handstand against a wall; lower the head toward the floor and press back up to full lockout."
+  },
+
+  {
+    "id": "dead_hang",
+    "name": "Dead Hang",
+    "category": "pull",
+    "muscleGroups": ["forearms", "lats", "shoulders"],
+    "difficulty": "beginner",
+    "measurementType": "hold",
+    "equipment": ["pull-up bar"],
+    "description": "Hang from a pull-up bar with arms fully extended and shoulders engaged, holding the position."
+  },
+  {
+    "id": "australian_row",
+    "name": "Australian Row",
+    "category": "pull",
+    "muscleGroups": ["back", "biceps"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["low bar or rings"],
+    "description": "Lie under a low bar with body straight; pull your chest up to the bar and lower back down with control."
+  },
+  {
+    "id": "negative_pullup",
+    "name": "Negative Pull-up",
+    "category": "pull",
+    "muscleGroups": ["back", "biceps", "forearms"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar"],
+    "description": "Jump or step up to the top pull-up position, then lower yourself down as slowly as possible."
+  },
+  {
+    "id": "band_assisted_pullup",
+    "name": "Band-Assisted Pull-up",
+    "category": "pull",
+    "muscleGroups": ["back", "biceps"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar", "resistance band"],
+    "description": "Loop a resistance band around the bar and under a foot or knee to reduce bodyweight, then perform a full pull-up."
+  },
+  {
+    "id": "pullup",
+    "name": "Pull-up",
+    "category": "pull",
+    "muscleGroups": ["back", "biceps", "forearms"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar"],
+    "description": "Hang with an overhand grip and pull your chin above the bar, then lower with control."
+  },
+  {
+    "id": "chinup",
+    "name": "Chin-up",
+    "category": "pull",
+    "muscleGroups": ["biceps", "back"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar"],
+    "description": "Hang with an underhand grip and pull your chin above the bar, then lower with control."
+  },
+  {
+    "id": "wide_grip_pullup",
+    "name": "Wide-Grip Pull-up",
+    "category": "pull",
+    "muscleGroups": ["back", "lats"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar"],
+    "description": "Grip the bar wider than shoulder width and pull up until your chin clears the bar, then lower with control."
+  },
+  {
+    "id": "archer_pullup",
+    "name": "Archer Pull-up",
+    "category": "pull",
+    "muscleGroups": ["back", "biceps"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar"],
+    "description": "Wide grip; pull up while shifting toward one hand, keeping the other arm extended, then switch sides."
+  },
+  {
+    "id": "typewriter_pullup",
+    "name": "Typewriter Pull-up",
+    "category": "pull",
+    "muscleGroups": ["back", "biceps", "forearms"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar"],
+    "description": "Pull up to the top and shift side to side across the bar while staying at the top, keeping chin above the bar."
+  },
+  {
+    "id": "muscle_up",
+    "name": "Muscle-up",
+    "category": "pull",
+    "muscleGroups": ["back", "chest", "triceps", "shoulders"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar or rings"],
+    "description": "Pull up explosively and transition over the bar into a dip lockout in one continuous motion."
+  },
+
+  {
+    "id": "bodyweight_squat",
+    "name": "Bodyweight Squat",
+    "category": "legs",
+    "muscleGroups": ["quads", "glutes", "hamstrings"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Feet shoulder-width apart; bend hips and knees to lower into a squat, then stand back up."
+  },
+  {
+    "id": "split_squat",
+    "name": "Split Squat",
+    "category": "legs",
+    "muscleGroups": ["quads", "glutes"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Step into a staggered stance and lower the back knee toward the floor, then push back up."
+  },
+  {
+    "id": "lunge",
+    "name": "Lunge",
+    "category": "legs",
+    "muscleGroups": ["quads", "glutes", "hamstrings"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Step forward and lower until both knees are bent near 90 degrees, then push back to standing."
+  },
+  {
+    "id": "bulgarian_split_squat",
+    "name": "Bulgarian Split Squat",
+    "category": "legs",
+    "muscleGroups": ["quads", "glutes"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["bodyweight", "bench"],
+    "description": "Rear foot elevated on a bench; lower the front leg into a lunge and push back up."
+  },
+  {
+    "id": "jump_squat",
+    "name": "Jump Squat",
+    "category": "legs",
+    "muscleGroups": ["quads", "glutes", "calves"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Perform a squat and explode upward into a jump, landing softly back into the squat position."
+  },
+  {
+    "id": "glute_bridge",
+    "name": "Glute Bridge",
+    "category": "legs",
+    "muscleGroups": ["glutes", "hamstrings"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Lie on your back with knees bent; drive hips upward by squeezing the glutes, then lower back down."
+  },
+  {
+    "id": "single_leg_glute_bridge",
+    "name": "Single-Leg Glute Bridge",
+    "category": "legs",
+    "muscleGroups": ["glutes", "hamstrings", "core"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "From a glute bridge, extend one leg straight and drive the hips up using the planted leg only."
+  },
+  {
+    "id": "assisted_pistol_squat",
+    "name": "Assisted Pistol Squat",
+    "category": "legs",
+    "muscleGroups": ["quads", "glutes", "core"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["bodyweight", "support (pole or rings)"],
+    "description": "Holding a support for balance, lower on one leg while the other leg extends forward, then push back up."
+  },
+  {
+    "id": "pistol_squat",
+    "name": "Pistol Squat",
+    "category": "legs",
+    "muscleGroups": ["quads", "glutes", "core"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Balance on one leg and lower into a full squat while the other leg stays extended forward, then stand back up."
+  },
+  {
+    "id": "nordic_curl",
+    "name": "Nordic Curl (Assisted)",
+    "category": "legs",
+    "muscleGroups": ["hamstrings"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["bodyweight", "partner or anchor for feet"],
+    "description": "Kneeling with ankles anchored, lower your torso forward as slowly as possible under hamstring control, then return."
+  },
+
+  {
+    "id": "plank",
+    "name": "Plank",
+    "category": "core",
+    "muscleGroups": ["core", "shoulders"],
+    "difficulty": "beginner",
+    "measurementType": "hold",
+    "equipment": ["bodyweight"],
+    "description": "Support your body on forearms and toes in a straight line from head to heels, bracing the core."
+  },
+  {
+    "id": "side_plank",
+    "name": "Side Plank",
+    "category": "core",
+    "muscleGroups": ["obliques", "core"],
+    "difficulty": "beginner",
+    "measurementType": "hold",
+    "equipment": ["bodyweight"],
+    "description": "Support your body on one forearm with the body in a straight side-facing line, hips lifted off the floor."
+  },
+  {
+    "id": "hollow_body_hold",
+    "name": "Hollow Body Hold",
+    "category": "core",
+    "muscleGroups": ["core", "hip flexors"],
+    "difficulty": "intermediate",
+    "measurementType": "hold",
+    "equipment": ["bodyweight"],
+    "description": "Lie on your back, press the lower back into the floor, and lift shoulders and legs off the ground into a dish shape."
+  },
+  {
+    "id": "hanging_knee_raise",
+    "name": "Hanging Knee Raise",
+    "category": "core",
+    "muscleGroups": ["core", "hip flexors"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar"],
+    "description": "Hang from a bar and raise your knees toward your chest, then lower with control."
+  },
+  {
+    "id": "hanging_leg_raise",
+    "name": "Hanging Leg Raise",
+    "category": "core",
+    "muscleGroups": ["core", "hip flexors"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["pull-up bar"],
+    "description": "Hang from a bar and raise straight legs until roughly parallel to the floor, then lower with control."
+  },
+  {
+    "id": "vup",
+    "name": "V-up",
+    "category": "core",
+    "muscleGroups": ["core", "hip flexors"],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Lie flat and simultaneously lift the legs and torso, reaching hands toward feet to form a V, then lower back down."
+  },
+  {
+    "id": "russian_twist",
+    "name": "Russian Twist",
+    "category": "core",
+    "muscleGroups": ["obliques", "core"],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": ["bodyweight"],
+    "description": "Sit with knees bent and feet lifted slightly; rotate the torso side to side, tapping the floor on each side."
+  },
+  {
+    "id": "lsit",
+    "name": "L-sit",
+    "category": "core",
+    "muscleGroups": ["core", "hip flexors", "shoulders"],
+    "difficulty": "advanced",
+    "measurementType": "hold",
+    "equipment": ["parallettes or parallel bars"],
+    "description": "Support yourself on hands with legs extended straight out in front, forming an L shape, and hold."
+  },
+  {
+    "id": "ab_wheel_rollout",
+    "name": "Ab Wheel Rollout",
+    "category": "core",
+    "muscleGroups": ["core", "lats"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["ab wheel"],
+    "description": "Kneeling, roll the wheel forward while keeping the core braced and back flat, then pull back to start."
+  },
+  {
+    "id": "dragon_flag",
+    "name": "Dragon Flag (Advanced Tuck)",
+    "category": "core",
+    "muscleGroups": ["core"],
+    "difficulty": "advanced",
+    "measurementType": "reps",
+    "equipment": ["bench"],
+    "description": "Lying on a bench and gripping behind the head, lift the body into a straight line supported only at the shoulders, tucking the knees as you lower."
+  },
+
+  {
+    "id": "tuck_planche",
+    "name": "Tuck Planche",
+    "category": "skills",
+    "muscleGroups": ["shoulders", "chest", "core"],
+    "difficulty": "intermediate",
+    "measurementType": "hold",
+    "equipment": ["parallettes or floor"],
+    "description": "From a support position, lean forward and lift the feet off the ground with knees tucked to the chest, holding the balance."
+  },
+  {
+    "id": "advanced_tuck_planche",
+    "name": "Advanced Tuck Planche",
+    "category": "skills",
+    "muscleGroups": ["shoulders", "chest", "core"],
+    "difficulty": "advanced",
+    "measurementType": "hold",
+    "equipment": ["parallettes or floor"],
+    "description": "From a tuck planche, extend the hips so the knees move away from the chest while keeping the feet off the ground."
+  },
+  {
+    "id": "straddle_planche",
+    "name": "Straddle Planche",
+    "category": "skills",
+    "muscleGroups": ["shoulders", "chest", "core"],
+    "difficulty": "advanced",
+    "measurementType": "hold",
+    "equipment": ["parallettes or floor"],
+    "description": "From an advanced tuck, extend the legs wide into a straddle while keeping the body parallel to the ground."
+  },
+  {
+    "id": "full_planche",
+    "name": "Full Planche",
+    "category": "skills",
+    "muscleGroups": ["shoulders", "chest", "core"],
+    "difficulty": "advanced",
+    "measurementType": "hold",
+    "equipment": ["parallettes or floor"],
+    "description": "Support the fully extended body parallel to the ground with legs together, balanced entirely on the hands."
+  },
+  {
+    "id": "tuck_front_lever",
+    "name": "Tuck Front Lever",
+    "category": "skills",
+    "muscleGroups": ["back", "lats", "core"],
+    "difficulty": "intermediate",
+    "measurementType": "hold",
+    "equipment": ["pull-up bar"],
+    "description": "Hang from a bar and pull the knees up to the chest while rotating the body to horizontal, holding the position."
+  },
+  {
+    "id": "advanced_tuck_front_lever",
+    "name": "Advanced Tuck Front Lever",
+    "category": "skills",
+    "muscleGroups": ["back", "lats", "core"],
+    "difficulty": "advanced",
+    "measurementType": "hold",
+    "equipment": ["pull-up bar"],
+    "description": "From a tuck front lever, extend the hips so the knees move away from the chest while staying horizontal."
+  },
+  {
+    "id": "full_front_lever",
+    "name": "Full Front Lever",
+    "category": "skills",
+    "muscleGroups": ["back", "lats", "core"],
+    "difficulty": "advanced",
+    "measurementType": "hold",
+    "equipment": ["pull-up bar"],
+    "description": "Hang from a bar and hold the fully extended body horizontal, parallel to the ground, facing up."
+  },
+  {
+    "id": "freestanding_handstand",
+    "name": "Freestanding Handstand",
+    "category": "skills",
+    "muscleGroups": ["shoulders", "core", "wrists"],
+    "difficulty": "advanced",
+    "measurementType": "hold",
+    "equipment": ["bodyweight"],
+    "description": "Balance upside down on the hands, body fully extended, without support from a wall."
+  },
+  {
+    "id": "tuck_back_lever",
+    "name": "Tuck Back Lever",
+    "category": "skills",
+    "muscleGroups": ["back", "shoulders", "core"],
+    "difficulty": "intermediate",
+    "measurementType": "hold",
+    "equipment": ["pull-up bar or rings"],
+    "description": "Hang from a bar, rotate so the body faces down, and tuck the knees to the chest while holding horizontal."
+  },
+  {
+    "id": "tuck_human_flag",
+    "name": "Tuck Human Flag",
+    "category": "skills",
+    "muscleGroups": ["obliques", "shoulders", "core"],
+    "difficulty": "advanced",
+    "measurementType": "hold",
+    "equipment": ["vertical pole"],
+    "description": "Grip a vertical pole with both hands and lift the tucked knees off the ground, holding the body sideways against the pole."
+  }
+]

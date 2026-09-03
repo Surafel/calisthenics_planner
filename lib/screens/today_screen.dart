@@ -7,6 +7,7 @@ import '../services/exercise_repository.dart';
 import '../services/schedule_repository.dart';
 import '../services/workout_repository.dart';
 import '../widgets/workout_card.dart';
+import 'exercise_detail_screen.dart';
 
 DayOfWeek _todayAsDayOfWeek() {
   // DateTime.weekday is 1 (Monday) through 7 (Sunday), matching enum order.
@@ -78,6 +79,12 @@ class _TodaySetTile extends StatelessWidget {
     return ListTile(
       title: Text(exercise.name),
       subtitle: Text('${entry.sets} sets · $measure · ${entry.restSeconds}s rest'),
+      trailing: const Icon(Icons.chevron_right),
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (_) => ExerciseDetailScreen(exercise: exercise),
+        ),
+      ),
     );
   }
 }

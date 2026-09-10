@@ -10,6 +10,7 @@ class SetEntryRow extends StatelessWidget {
   final WorkoutExercise entry;
   final ValueChanged<WorkoutExercise> onChanged;
   final VoidCallback onRemove;
+  final VoidCallback onViewDetails;
 
   const SetEntryRow({
     super.key,
@@ -17,6 +18,7 @@ class SetEntryRow extends StatelessWidget {
     required this.entry,
     required this.onChanged,
     required this.onRemove,
+    required this.onViewDetails,
   });
 
   @override
@@ -32,9 +34,12 @@ class SetEntryRow extends StatelessWidget {
             Row(
               children: [
                 Expanded(
-                  child: Text(
-                    exercise.name,
-                    style: Theme.of(context).textTheme.titleMedium,
+                  child: InkWell(
+                    onTap: onViewDetails,
+                    child: Text(
+                      exercise.name,
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
                   ),
                 ),
                 IconButton(

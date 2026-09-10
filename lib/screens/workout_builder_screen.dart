@@ -6,6 +6,7 @@ import '../models/workout_exercise.dart';
 import '../services/exercise_repository.dart';
 import '../services/workout_repository.dart';
 import '../widgets/set_entry_row.dart';
+import 'exercise_detail_screen.dart';
 import 'exercise_picker_screen.dart';
 
 class WorkoutBuilderScreen extends StatefulWidget {
@@ -119,6 +120,11 @@ class _WorkoutBuilderScreenState extends State<WorkoutBuilderScreen> {
                         onChanged: (updated) =>
                             setState(() => _exercises[index] = updated),
                         onRemove: () => setState(() => _exercises.removeAt(index)),
+                        onViewDetails: () => Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => ExerciseDetailScreen(exercise: exercise),
+                          ),
+                        ),
                       );
                     },
                   ),

@@ -181,6 +181,68 @@
     "videoChannel": "ZeroG-Fitness"
   },
   {
+    "id": "superman",
+    "name": "Superman",
+    "category": "pull",
+    "muscleGroups": [
+      "back",
+      "glutes",
+      "shoulders"
+    ],
+    "difficulty": "beginner",
+    "measurementType": "hold",
+    "equipment": [
+      "bodyweight"
+    ],
+    "description": "Lie face down with arms extended overhead; lift arms, chest, and legs off the floor at once and hold."
+  },
+  {
+    "id": "bird_dog",
+    "name": "Bird Dog",
+    "category": "pull",
+    "muscleGroups": [
+      "back",
+      "core",
+      "glutes"
+    ],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": [
+      "bodyweight"
+    ],
+    "description": "From hands and knees, extend one arm and the opposite leg out until level with the torso, then switch sides with control."
+  },
+  {
+    "id": "reverse_snow_angel",
+    "name": "Reverse Snow Angel",
+    "category": "pull",
+    "muscleGroups": [
+      "back",
+      "shoulders"
+    ],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": [
+      "bodyweight"
+    ],
+    "description": "Lie face down with arms at your sides, palms down; sweep the arms up and out like a snow angel while squeezing the shoulder blades, then return."
+  },
+  {
+    "id": "prone_y_raise",
+    "name": "Prone Y-Raise",
+    "category": "pull",
+    "muscleGroups": [
+      "back",
+      "shoulders"
+    ],
+    "difficulty": "intermediate",
+    "measurementType": "reps",
+    "equipment": [
+      "bodyweight"
+    ],
+    "description": "Lie face down with arms extended overhead in a Y shape; lift the arms and chest slightly off the floor, squeezing the upper back, then lower."
+  },
+  {
     "id": "dead_hang",
     "name": "Dead Hang",
     "category": "pull",
@@ -585,6 +647,21 @@
     "description": "Lie on your back, press the lower back into the floor, and lift shoulders and legs off the ground into a dish shape.",
     "videoId": "HAfUt2Cco74",
     "videoChannel": "Zack Henderson"
+  },
+  {
+    "id": "lying_leg_raise",
+    "name": "Lying Leg Raise",
+    "category": "core",
+    "muscleGroups": [
+      "core",
+      "hip flexors"
+    ],
+    "difficulty": "beginner",
+    "measurementType": "reps",
+    "equipment": [
+      "bodyweight"
+    ],
+    "description": "Lie on your back with legs extended; raise both legs toward the ceiling keeping them straight, then lower without touching the floor."
   },
   {
     "id": "hanging_knee_raise",

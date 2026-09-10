@@ -26,10 +26,10 @@ List<Workout> buildStarterWorkouts() => const [
         id: pullDayId,
         name: 'Pull Day',
         exercises: [
-          WorkoutExercise(exerciseId: 'dead_hang', sets: 3, holdSeconds: 20, restSeconds: 45),
-          WorkoutExercise(exerciseId: 'australian_row', sets: 3, reps: 10, restSeconds: 60),
-          WorkoutExercise(exerciseId: 'negative_pullup', sets: 3, reps: 5, restSeconds: 60),
-          WorkoutExercise(exerciseId: 'chinup', sets: 3, reps: 6, restSeconds: 60),
+          WorkoutExercise(exerciseId: 'superman', sets: 3, holdSeconds: 20, restSeconds: 45),
+          WorkoutExercise(exerciseId: 'bird_dog', sets: 3, reps: 10, restSeconds: 45),
+          WorkoutExercise(exerciseId: 'reverse_snow_angel', sets: 3, reps: 12, restSeconds: 60),
+          WorkoutExercise(exerciseId: 'prone_y_raise', sets: 3, reps: 10, restSeconds: 60),
         ],
       ),
       Workout(
@@ -51,7 +51,7 @@ List<Workout> buildStarterWorkouts() => const [
           WorkoutExercise(exerciseId: 'side_plank', sets: 3, holdSeconds: 25, restSeconds: 30),
           WorkoutExercise(exerciseId: 'hollow_body_hold', sets: 3, holdSeconds: 20, restSeconds: 45),
           WorkoutExercise(exerciseId: 'russian_twist', sets: 3, reps: 20, restSeconds: 45),
-          WorkoutExercise(exerciseId: 'hanging_knee_raise', sets: 3, reps: 10, restSeconds: 60),
+          WorkoutExercise(exerciseId: 'lying_leg_raise', sets: 3, reps: 10, restSeconds: 60),
         ],
       ),
     ];
